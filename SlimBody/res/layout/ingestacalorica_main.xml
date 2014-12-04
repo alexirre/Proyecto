@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="calcularingesta" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/saber" />
+
+    <TextView
+        android:id="@+id/repeticiones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/ingrese" />
+
+    <EditText
+        android:id="@+id/sexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sexo"
+        android:layout_below="@+id/textView5"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/pesoingesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edad"
+        android:layout_below="@+id/textView6"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_below="@+id/pesoingesta"
+        android:layout_marginTop="15dp"
+        android:text="@string/alturaingesta" />
+
+    <EditText
+        android:id="@+id/alturaingesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pesoingesta"
+        android:layout_below="@+id/textView7"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_below="@+id/sexo"
+        android:layout_marginTop="16dp"
+        android:text="@string/edad" />
+
+    <Button
+        android:id="@+id/calcularingesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alturaingesta"
+        android:layout_centerHorizontal="true"
+        android:onClick="calcularingesta"
+        android:text="@string/calcularingesta" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_below="@+id/repeticiones"
+        android:layout_marginTop="15dp"
+        android:text="@string/sexo" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/repeticiones"
+        android:text="@string/pesoingesta" />
+
+    <TextView
+        android:id="@+id/resultadodiario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/series"
+        android:layout_alignBottom="@+id/series"
+        android:layout_alignRight="@+id/alturaingesta"
+        android:layout_toRightOf="@+id/series"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/series"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calcularingesta"
+        android:layout_marginTop="22dp"
+        android:layout_toLeftOf="@+id/calcularingesta"
+        android:text="@string/resultado"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

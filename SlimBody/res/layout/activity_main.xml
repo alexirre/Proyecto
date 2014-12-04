@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.slimbody.MainActivity" >
+
+    <TextView
+        android:id="@+id/masacorporal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:textSize="20sp"
+        android:text="@string/con" />
+
+    <ImageButton
+        android:id="@+id/bascula"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/masacorporal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:onClick="imc"
+        android:src="@drawable/bascula" />
+
+    <TextView
+        android:id="@+id/ingestacalorica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/masacorporal"
+        android:layout_below="@+id/bascula"
+        android:layout_marginTop="34dp"
+        android:text="@string/cal"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/calorias"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/bascula"
+        android:layout_below="@+id/ingestacalorica"
+        android:layout_marginTop="22dp"
+        android:onClick="ingestacalorica"
+        android:src="@drawable/comidasana" />
+
+    <TextView
+        android:id="@+id/ruti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rutinas"
+        android:layout_alignLeft="@+id/ingestacalorica"
+        android:layout_marginBottom="21dp"
+        android:layout_marginLeft="27dp"
+        android:text="@string/rutinas"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/rutinas"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignRight="@+id/ingestacalorica"
+        android:layout_below="@+id/calorias"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="46dp"
+        android:onClick="rutinas"
+        android:src="@drawable/cuerpo" />
+
+</RelativeLayout>

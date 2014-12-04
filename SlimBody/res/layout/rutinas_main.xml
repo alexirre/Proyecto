@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/cuerpogym"
+    android:layout_height="match_parent" >
+    
+    <Button
+        android:id="@+id/trisep"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/espalda"
+        android:layout_alignBottom="@+id/espalda"
+        android:layout_alignLeft="@+id/bisep"
+        android:onClick="tricep"
+        android:text="@string/triceps" />
+
+    <Button
+        android:id="@+id/pierna"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/hombro"
+        android:layout_alignLeft="@+id/trisep"
+        android:onClick="pierna"
+        android:text="@string/pierna" />
+
+    <Button
+        android:id="@+id/pecho"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="61dp"
+        android:onClick="pecho"
+        android:text="@string/pecho" />
+
+    <Button
+        android:id="@+id/bisep"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/pecho"
+        android:layout_alignBottom="@+id/pecho"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:onClick="bicep"
+        android:text="@string/biceps" />
+
+    <Button
+        android:id="@+id/espalda"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/pecho"
+        android:layout_centerVertical="true"
+        android:onClick="espalda"
+        android:text="@string/espalda" />
+
+    <Button
+        android:id="@+id/hombro"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/espalda"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="64dp"
+        android:onClick="hombro"
+        android:text="@string/hombro" />
+
+</RelativeLayout>

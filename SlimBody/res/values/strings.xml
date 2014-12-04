@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Slim Body</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="con">Consultar Masa Corporal</string><string name="imc">IMC</string><string name="calorias">Calorias</string><string name="action_settings">Settings</string>
+    
+    
+    <string name="cal">Calcular Ingesta Calorica</string><string name="peso">Ingrese su peso (kg)</string><string name="altura">Ingrese su altura (cm)</string><string name="calcular">Calcular</string><string name="calimc">IMC:</string><string name="cuantas">¿Cuantas calorias consumio al dia?</string><string name="sexo">Sexo:</string><string name="saber">Para saber cuantas calorias debe consumir al dia</string><string name="edad">Edad:</string><string name="pesoingesta">Peso (kg):</string><string name="ingrese">Ingrese los siguientes datos:</string><string name="alturaingesta">Altura (cm):</string><string name="resultado">Resultado:</string><string name="calcularingesta">Calcular</string><string name="pecho">Pecho</string><string name="espalda">Espalda</string><string name="hombro">Hombro</string><string name="pierna">Pierna</string><string name="biceps">Biceps</string><string name="series">Series</string><string name="triceps">Triceps</string><string name="repe">Repeticiones</string><string name="consu">Consultar</string><string name="rutinas">Rutinas</string>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</resources>
